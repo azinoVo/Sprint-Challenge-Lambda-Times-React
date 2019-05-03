@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 // tabData = ['all', 'javascript', 'technology', 'node', 'React.js', 'bootstrap'];
 
 const Tabs = props => {
-console.log(props.tabs);
+// console.log(props.tabs);
 
   return (
     <div className="tabs">
@@ -15,7 +15,7 @@ console.log(props.tabs);
         {/* map over the tabs provided on your props, create a new Tab component for each one.
             give the tab component a `selectTabHandler`, the `selectedTab`, and the `tab` itself as props*/}
             {props.tabs.map((tab,index) =>
-              <Tab key={index} selectTabHandler={props.selectTabHandler} selectedTab={props.selectedTab} tab={tab} />
+              <Tab id={tab} selectTabHandler={props.selectTabHandler} selectedTab={props.selectedTab} tab={tab} />
             )}
       </div>
     </div>

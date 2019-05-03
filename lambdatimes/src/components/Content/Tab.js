@@ -11,11 +11,12 @@ const Tab = props => {
       if(props.tab === props.selectedTab) {
         return (
           <div
+            id={props.tab}
             className='tab active-tab'
-            onClick={props.selectTabHandler(props.tab)
+            onClick={props.selectTabHandler}
               /* Replace this dummy click handler function with your selectTabHandler function from props 
                you'll need to pass the `tab` in as an argument to this handler. */
-            }
+        
           >
             {props.tab.toUpperCase()}
           </div>
@@ -24,11 +25,11 @@ const Tab = props => {
       else {
         return (
           <div
+            id={props.id}
             className='tab'
-            onClick={props.selectTabHandler(props.tab)
+            onClick={props.selectTabHandler}
               /* Replace this dummy click handler function with your selectTabHandler function from props 
                you'll need to pass the `tab` in as an argument to this handler. */
-            }
           >
             {props.tab.toUpperCase()}
           </div>
