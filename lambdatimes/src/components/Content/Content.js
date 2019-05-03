@@ -34,6 +34,15 @@ export default class Content extends Component {
 
   filterCards = () => {
     console.log(this.state.selected)
+
+    const filtered = this.state.cards.filter(card => {
+      if(this.state.selected === card.tab) {
+        return card;
+      }
+    });
+
+    return filtered;
+
     /* Right now this function only returns the cards on state.
       We're going to make this function more dynamic
       by using it to filter out our cards for when a tab is selected
