@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 // Tabs props: selectTabHandler={props.selectTabHandler} selectedTab={props.selectedTab} tab={tab}
 
 const Tab = props => {
+  // console.log(props.tab);
   /* Using your props, determine if the `tab` prop matches the `selectedTab` prop, 
       if they match, the className should be: 'tab active-tab', 
       if it is not it should just be 'tab'*/

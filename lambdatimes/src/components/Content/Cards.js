@@ -5,15 +5,15 @@ import PropTypes from 'prop-types';
 
 const Cards = props => {
 
-  // console.log(props);
+  // console.log(props.cards);
 
   return (
     <div className="cards-container">
       {/* Using the cards prop, map over the list creating a 
           new Card component for each passing the card as the only prop*/}
-          {props.cards.map(card => {
-            <Card card={card} />
-          })}
+          {props.cards.map((card, index) =>
+            <Card key={index} card={card} />
+          )}
     </div>
   )
 }

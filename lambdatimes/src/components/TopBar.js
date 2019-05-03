@@ -7,17 +7,15 @@ import styled from 'styled-components';
 // `
 // `
 
-// const TopBarWrap = styled.div
-//   `
-//   width: 100%;
-//   display: flex;
-//   justify-content: center;
-//   align-items: none;
-//   flex-direction: row;
-//   position: fixed;
-//   height: 44px;
-//   background-color: #333;
-// `
+const TopBarWrap = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: row;
+  position: fixed;
+  height: 44px;
+  background-color: #333;`
 
 // const Container = styled.div
 //   `
@@ -69,7 +67,7 @@ import styled from 'styled-components';
 
 const TopBar = () => {
   return (
-    <div className="top-bar">
+    <TopBarWrap>
       <div className="container">
         <div className="container-left">
           <span>TOPICS</span><span>SEARCH</span>
@@ -81,7 +79,7 @@ const TopBar = () => {
           <span>LOG IN</span>
         </div>
       </div>
-    </div>
+    </TopBarWrap>
   )
 }
 
