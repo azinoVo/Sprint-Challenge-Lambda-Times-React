@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 // tabData = ['all', 'javascript', 'technology', 'node', 'React.js', 'bootstrap'];
 
 const Tabs = props => {
+  
   return (
     <div className="tabs">
       <div className="topics">
